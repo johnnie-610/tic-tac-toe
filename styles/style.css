@@ -1,0 +1,201 @@
+:root {
+    --primary-color: #3498db;
+    --dark-background-color: #2c3e50;
+    --light-background-color: #ecf0f1;
+    --primary-text-color: #2c3e50;
+    --secondary-text-color: #7f8c8d;
+    --accent-color: #e74c3c;
+    --success-color: #2ecc71;
+    --warning-color: #f39c12;
+    --error-color: #e74c3c;
+    --info-color: #3498db;
+    --light-color: #ffffff;
+    --dark-color: #34495e;
+    --muted-color: #95a5a6;
+    --muted-background-color: #bdc3c7;
+    --border-color: #bdc3c7;
+    --secondary-color: #2ecc71;
+    --background-color: #ecf0f1;
+    --text-color: #2c3e50;
+    --font-family: 'Arial, sans-serif';
+    --font-size: 16px;
+    --border-radius: 5px;
+    --box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+    --padding: 10px;
+    --margin: 10px;
+    --width: 100%;
+    --height: auto;
+    --max-width: 1200px;
+    --min-width: 300px;
+    --max-height: 800px;
+    --min-height: 200px;
+
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+header {
+    background-color: var(--dark-background-color);
+    color: #fff;
+    padding: var(--padding);
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.logo svg {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    fill: var(--light-color);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: var(--light-color);
+    font-weight: bold;
+    padding: var(--padding);
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+}
+nav ul li a:hover {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+}
+
+main {
+    padding: var(--padding);
+    height: calc(100vh - 20vh);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: var(--width);
+    padding: var(--padding);
+    background-color: var(--light-background-color);
+}
+section h2 {
+    font-size: 24px;
+}
+section p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--secondary-text-color);
+}
+
+.hero h1 {
+    font-size: clamp(24px, 5vw, 48px);
+    text-align: center;
+    color: var(--primary-color);
+}
+.hero p {
+    font-size: clamp(16px, 3vw, 24px);
+    text-align: center;
+    color: var(--secondary-text-color);
+}
+
+.features h2 {
+    font-size: 32px;
+    color: var(--primary-color);
+}
+.features ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    font-size: large;
+}
+
+.cta {
+    gap: 10px;
+}
+
+.cta h2 {
+    font-size: 32px;
+    color: var(--primary-color);
+}
+
+
+section button {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    border: none;
+    padding: var(--padding);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-size: 16px;
+    transition: var(--transition);
+}
+section button:hover {
+    background-color: var(--secondary-color);
+    transform: scale(1.05);
+    box-shadow: var(--box-shadow);
+}
+
+footer {
+    background-color: var(--dark-background-color);
+    color: var(--light-color);
+    text-align: center;
+    padding: var(--padding);
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+footer p {
+    margin: 0;
+    font-size: 20px;
+}
+footer a {
+    color: var(--light-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .heart {
+    color: var(--accent-color);
+    font-weight: bold;
+}

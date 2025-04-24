@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/styles/style.css">
-    <script src="/scripts/script.js" defer></script>
-    <title>JG - Home | Tic Tac Toe</title>
+    <link rel="stylesheet" href="/styles/game_style.css">
+    <script src="/scripts/game_script.js" defer></script>
+    <title>JG - Game</title>
 </head>
-<body>
+<body background-color="#f0f0f0">
     <header>
         <div class="logo">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -20,32 +20,29 @@
         </div>
         <nav>
             <ul>
-                <li><a href="/pages/game.html">Game</a></li>
+                <li><a href="/index.html">Home</a></li>
                 <li><a href="/pages/about.html">About</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="hero">
+        <section class="game">
             <h1>Tic Tac Toe</h1>
-            <p>Welcome to the Tic Tac Toe game! In this game, you can play against another player or against the computer.
-                <br>
-                Are you ready to test your skills? Choose the board size and game mode and let the game begin!
-            </p>
+            <p>Welcome to the Tic Tac Toe game! In this game, you can play against another player or against the computer. Are you ready to test your skills? Choose the board size and game mode and let the game begin!</p>
+            <div class="game-board">
+                <!-- Game board will be generated here -->
+            </div>
+            <button id="new-game-button">New Game</button>
         </section>
-        <section class="features">
-            <h2>Features</h2>
-            <ul>
-                <li>3x3, 4x4, and 5x5 boards</li>
-                <li>Single player and multiplayer modes</li>
-                <li>Save and load game states</li>
-            </ul>
-        </section>
-        <section class="cta">
-            <h2>Ready to play?</h2>
-            <button id="game-button">New Game</button>
+        <section class="controls">
+            <h2>Controls</h2>
+            <p>Use the buttons below to control the game:</p>
+            <button id="reset-button">Reset</button>
+            <button id="save-button">Save Game</button>
+            <button id="load-button">Load Game</button>
         </section>
     </main>
+    <p align="center">GAME SCREEN</p>
     <footer></footer>
 </body>
 </html>

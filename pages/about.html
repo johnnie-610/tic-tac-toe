@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/styles/about_style.css">
+    <script src="/scripts/about_script.js" defer></script>
+    <title>JG - About</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <title>controller</title>
+                <path
+                    d="M7.97,16L5,19C4.67,19.3 4.23,19.5 3.75,19.5A1.75,1.75 0 0,1 2,17.75V17.5L3,10.12C3.21,7.81 5.14,6 7.5,6H16.5C18.86,6 20.79,7.81 21,10.12L22,17.5V17.75A1.75,1.75 0 0,1 20.25,19.5C19.77,19.5 19.33,19.3 19,19L16.03,16H7.97M7,8V10H5V11H7V13H8V11H10V10H8V8H7M16.5,8A0.75,0.75 0 0,0 15.75,8.75A0.75,0.75 0 0,0 16.5,9.5A0.75,0.75 0 0,0 17.25,8.75A0.75,0.75 0 0,0 16.5,8M14.75,9.75A0.75,0.75 0 0,0 14,10.5A0.75,0.75 0 0,0 14.75,11.25A0.75,0.75 0 0,0 15.5,10.5A0.75,0.75 0 0,0 14.75,9.75M18.25,9.75A0.75,0.75 0 0,0 17.5,10.5A0.75,0.75 0 0,0 18.25,11.25A0.75,0.75 0 0,0 19,10.5A0..>75,0.75 0 0,0 18.25,9.75M16.5,11.5A0.75,0.75 0 0,0 15.75,12.25A0.75,0.75 0 0,0 16.5,13A0.75,0.75 0 0,0 17.25,12.25A0.75,0.75 0 0,0 16.5,11.5Z">
+                </path>
+            </svg>
+            <p>JG</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/pages/game.html">Game</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>About: JG games - Tic Tac Toe</h1>
+        <p>
+            JG games is a collection of simple and fun games designed for everyone to enjoy. The Tic Tac Toe game is a classic game that can be played against another player or the computer. The game features different board sizes (3x3, 4x4, and 5x5) and allows you to save and load your game state.
+            <br>
+            <br>
+            The game is designed to be easy to use and understand, making it perfect for players of all ages. Whether you're a seasoned player or new to the game, you'll find something to enjoy in JG games.
+            <br>
+            <br>
+            The Tic Tac Toe game is a great way to pass the time and challenge your friends or family. With its simple rules and engaging gameplay, it's sure to provide hours of entertainment.
+            <br>
+            <br>
+            Thank you for playing JG games! We hope you enjoy the Tic Tac Toe game and come back for more fun in the future.
+            <br>
+            <br>
+            If you have any questions or feedback, please feel free to reach out to us. We are always looking for ways to improve our games and make them even more enjoyable for our players.
+            <br>
+            <br>
+            Happy gaming!
+        </p>
+        <section class="contact-dialog">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required minlength="3" maxlength="20" pattern="[A-Za-z\s]+" title="Please enter a valid name (letters and spaces only)" placeholder="John Doe" autofocus autocomplete="name">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="youremail@example.com" autocomplete="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Please enter a valid email address">
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required minlength="5" maxlength="50" pattern="[A-Za-z0-9\s]+" title="Please enter a valid subject (letters, numbers, and spaces only)" placeholder="Subject of your message">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required minlength="100" placeholder="Your message here" title="Please enter a valid message (at least 100 characters and no more than 1000)" maxlength="1000" autocapitalize="on" autocomplete="on" autofocus></textarea>
+                <button id="submit" type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>
