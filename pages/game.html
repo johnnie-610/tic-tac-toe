@@ -8,7 +8,7 @@
     <script src="/scripts/game_script.js" defer></script>
     <title>JG - Game</title>
 </head>
-<body background-color="#f0f0f0">
+<body>
     <header>
         <div class="logo">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -26,23 +26,42 @@
         </nav>
     </header>
     <main>
-        <section class="game">
+        <div class="game-container">
             <h1>Tic Tac Toe</h1>
-            <p>Welcome to the Tic Tac Toe game! In this game, you can play against another player or against the computer. Are you ready to test your skills? Choose the board size and game mode and let the game begin!</p>
-            <div class="game-board">
-                <!-- Game board will be generated here -->
+            <div class="board-dialog-modal">
+                <dialog class="game-dialog" id="game-dialog">
+                    <form>
+                        <legend>Choose Board Size, game mode, and symbol</legend>
+                        <div class="dialog-content">
+                            <label for="board-size">Board Size:</label>
+                            <select id="board-size" name="board-size" required>
+                                <option value="3">3x3</option>
+                                <option value="4">4x4</option>
+                                <option value="5">5x5</option>
+                            </select>
+            
+                            <label for="game-mode">Game Mode:</label>
+                            <select id="game-mode" name="game-mode" required>
+                                <option value="player-vs-computer">Player vs Computer</option>
+                                <option value="player-vs-player">Player vs Player</option>
+                            </select>
+            
+                            <label for="symbol">Your Symbol:</label>
+                            <select id="symbol" name="symbol" required>
+                                <option value="X">X</option>
+                                <option value="O">O</option>
+                            </select>
+                        </div>
+                        <div class="dialog-actions">
+                            <button type="submit" id="start-game-button">Start Game</button>
+                            <button type="button" id="close-dialog-button">Close</button>
+                        </div>
+                    </form>
+                </dialog>
             </div>
             <button id="new-game-button">New Game</button>
-        </section>
-        <section class="controls">
-            <h2>Controls</h2>
-            <p>Use the buttons below to control the game:</p>
-            <button id="reset-button">Reset</button>
-            <button id="save-button">Save Game</button>
-            <button id="load-button">Load Game</button>
-        </section>
+        </div>
     </main>
-    <p align="center">GAME SCREEN</p>
     <footer></footer>
 </body>
 </html>
